@@ -260,7 +260,7 @@ private fun CompilerConfiguration.buildHmppModuleStructure(arguments: CommonComp
                     }
                     append(
                         " can be a part of only one module, but is listed as a source for both `${m1.name}` and `${m2.name}`, " +
-                                "please check you -Xfragment-sources options."
+                                "please check your -Xfragment-sources options."
                     )
                 }
                 reportError(message)
