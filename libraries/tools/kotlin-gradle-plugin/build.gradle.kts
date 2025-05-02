@@ -1,13 +1,16 @@
+import com.android.build.gradle.internal.lint.AndroidLintAnalysisTask
 import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 import gradle.GradlePluginVariant
 import org.jetbrains.kotlin.build.androidsdkprovisioner.ProvisioningType
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import java.lang.reflect.Field
 
 plugins {
     id("gradle-plugin-common-configuration")
     id("kotlin-git.gradle-build-conventions.binary-compatibility-extended")
     id("android-sdk-provisioner")
     id("asm-deprecating-transformer")
+    id("com.android.lint") version "8.11.0-alpha09"
     `java-test-fixtures`
 }
 
@@ -200,6 +203,8 @@ dependencies {
     testImplementation(project(":kotlin-tooling-metadata"))
     testImplementation(libs.lincheck)
     testImplementation(commonDependency("org.jetbrains.kotlin:kotlin-reflect")) { isTransitive = false }
+
+    lintChecks("androidx.lint:lint-gradle:1.0.0-alpha04")
 }
 
 configurations.commonCompileClasspath.get().exclude("org.jetbrains.kotlinx", "kotlinx-coroutines-core")
@@ -620,3 +625,57 @@ fun avoidPublishingTestFixtures() {
     javaComponent.withVariantsFromConfiguration(configurations["testFixturesRuntimeElements"]) { skip() }
 }
 avoidPublishingTestFixtures()
+
+lint {
+    baseline = file("lint-baseline.xml")
+    disable += listOf("GradleDependency", "UseTomlInstead")
+}
+
+afterEvaluate {
+    afterEvaluate {
+        project.tasks.withType<AndroidLintAnalysisTask>().configureEach {
+            val kotlinSources = kotlin.sourceSets.getByName("common").kotlin.sourceDirectories
+            variantInputs.sourceProviders.getOrNull()?.firstOrNull()?.javaDirectories?.withChangesAllowed { from(kotlinSources ) }
+
+            doFirst {
+                kotlinSources.forEach {
+                    println(it.absolutePath)
+                }
+            }
+        }
+    }
+}
+
+/**
+ * Lint uses [ConfigurableFileCollection.disallowChanges] during initialization, which prevents
+ * modifying the file collection separately (there is no time to configure it before AGP has
+ * initialized and disallowed changes). This uses reflection to temporarily allow changes, and apply
+ * [block].
+ */
+private fun ConfigurableFileCollection.withChangesAllowed(
+    block: ConfigurableFileCollection.() -> Unit
+) {
+    // The `disallowChanges` field is defined on `ConfigurableFileCollection` inner `ValueState`.
+    val (target, field) =
+        findDeclaredFieldOnClass("valueState")?.let { valueState ->
+            valueState.isAccessible = true
+            val target = valueState.get(this)
+            target.findDeclaredFieldOnClass("disallowChanges")?.let { field ->
+                // For Gradle 8.6 and later,
+                Pair(target, field)
+            }
+        } ?: throw NoSuchFieldException()
+
+    // Make the field temporarily accessible while we run the `block`.
+    field.isAccessible = true
+    field.set(target, false)
+    block()
+    field.set(target, true)
+}
+
+private fun Any.findDeclaredFieldOnClass(name: String): Field? =
+    try {
+        this::class.java.getDeclaredField(name)
+    } catch (e: NoSuchFieldException) {
+        null
+    }

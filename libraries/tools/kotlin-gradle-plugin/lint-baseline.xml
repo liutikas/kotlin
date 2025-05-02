@@ -1,0 +1,3510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.11.0-alpha09" type="baseline" client="gradle" dependencies="false" name="AGP (8.11.0-alpha09)" variant="all" version="8.11.0-alpha09">
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/utils/formattingUtils.kt"
+            line="53"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/utils/formattingUtils.kt"
+            line="57"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/utils/formattingUtils.kt"
+            line="60"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="SimpleDateFormat"
+        message="To get local formatting use `getDateInstance()`, `getDateTimeInstance()`, or `getTimeInstance()`, or use `new SimpleDateFormat(String template, Locale locale)` with for example `Locale.US` for ASCII dates.">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/report/BuildReportsService.kt"
+            line="386"
+            column="38"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Passing Configuration to ConfigurableFileCollection.from results in eager resolution of this configuration. Instead use project.files(configuration) or configuration.incoming.artifactView {}.files to wrap the configuration making it lazy.">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/abi/AbiValidationTaskSet.kt"
+            line="94"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Passing Configuration to ConfigurableFileCollection.from results in eager resolution of this configuration. Instead use project.files(configuration) or configuration.incoming.artifactView {}.files to wrap the configuration making it lazy.">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/abi/AbiValidationTaskSet.kt"
+            line="97"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Passing Configuration to ConfigurableFileCollection.from results in eager resolution of this configuration. Instead use project.files(configuration) or configuration.incoming.artifactView {}.files to wrap the configuration making it lazy.">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/tasks/configuration/AbstractKotlinCompileConfig.kt"
+            line="117"
+            column="38"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/AbstractKotlinPlugin.kt"
+            line="72"
+            column="80"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/AbstractKotlinPlugin.kt"
+            line="103"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/AbstractKotlinPlugin.kt"
+            line="145"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/AbstractKotlinPlugin.kt"
+            line="197"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/AbstractKotlinTarget.kt"
+            line="177"
+            column="37"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/android/AndroidProjectHandler.kt"
+            line="125"
+            column="85"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method matching">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/android/AndroidProjectHandler.kt"
+            line="155"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method matching">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/android/AndroidProjectHandler.kt"
+            line="163"
+            column="43"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method get">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/android/AndroidProjectHandler.kt"
+            line="252"
+            column="32"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method get">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/internal/CInteropCommonizerCompositeMetadataJarBundling.kt"
+            line="24"
+            column="51"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method get">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/internal/CInteropCommonizerDependencies.kt"
+            line="39"
+            column="32"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method get">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/internal/CInteropCommonizerDependencies.kt"
+            line="61"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method matching">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/internal/CInteropMetadataDependencyTransformationTask.kt"
+            line="105"
+            column="80"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method findByName">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/internal/CInteropPropagatedDependencies.kt"
+            line="100"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/CocoapodsExtension.kt"
+            line="219"
+            column="64"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/diagnostics/checkers/CommonMainOrTestWithDependsOnChecker.kt"
+            line="26"
+            column="45"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Passing Configuration to ConfigurableFileCollection.from results in eager resolution of this configuration. Instead use project.files(configuration) or configuration.incoming.artifactView {}.files to wrap the configuration making it lazy.">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/internal/CommonizerTasks.kt"
+            line="103"
+            column="37"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Passing Configuration to ConfigurableFileCollection.from results in eager resolution of this configuration. Instead use project.files(configuration) or configuration.incoming.artifactView {}.files to wrap the configuration making it lazy.">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/internal/CommonizerTasks.kt"
+            line="196"
+            column="37"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/ConfigureFrameworkExportSideEffect.kt"
+            line="24"
+            column="65"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method get">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/internal/CopyCInteropCommonizerTaskOutputForIdeTask.kt"
+            line="48"
+            column="52"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/compilationImpl/CreateCInteropTasksSideEffect.kt"
+            line="30"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/compilationImpl/CreateCInteropTasksSideEffect.kt"
+            line="93"
+            column="47"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/D8EnvironmentConfigurator.kt"
+            line="36"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/publishing/ExportTargetPublicationCoordinates.kt"
+            line="57"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/external/ExternalKotlinTargetImpl.kt"
+            line="106"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method get">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/compilerRunner/GradleKotlinCompilerRunner.kt"
+            line="331"
+            column="78"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method findByName">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/compilerRunner/GradleKotlinCompilerRunner.kt"
+            line="339"
+            column="53"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use named instead of getByName">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/compilerRunner/GradleKotlinCompilerRunner.kt"
+            line="342"
+            column="53"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method findByName">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/compilerRunner/GradleKotlinCompilerRunner.kt"
+            line="382"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method findByName">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/compilerRunner/GradleKotlinCompilerRunner.kt"
+            line="393"
+            column="60"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method get">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/kapt/Kapt3KotlinGradleSubplugin.kt"
+            line="220"
+            column="63"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Passing Configuration to ConfigurableFileCollection.from results in eager resolution of this configuration. Instead use project.files(configuration) or configuration.incoming.artifactView {}.files to wrap the configuration making it lazy.">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/kapt/Kapt3KotlinGradleSubplugin.kt"
+            line="306"
+            column="32"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method get">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/tasks/configuration/KaptConfig.kt"
+            line="70"
+            column="45"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method get">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/tasks/configuration/KaptConfig.kt"
+            line="99"
+            column="132"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Passing Configuration to ConfigurableFileCollection.from results in eager resolution of this configuration. Instead use project.files(configuration) or configuration.incoming.artifactView {}.files to wrap the configuration making it lazy.">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/tasks/configuration/KaptConfig.kt"
+            line="176"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Passing Configuration to ConfigurableFileCollection.from results in eager resolution of this configuration. Instead use project.files(configuration) or configuration.incoming.artifactView {}.files to wrap the configuration making it lazy.">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/tasks/configuration/KaptConfig.kt"
+            line="215"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/KotilnNativeConfigureBinariesSideEffect.kt"
+            line="35"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/KotilnNativeConfigureBinariesSideEffect.kt"
+            line="42"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/KotilnNativeConfigureBinariesSideEffect.kt"
+            line="46"
+            column="54"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/KotilnNativeConfigureBinariesSideEffect.kt"
+            line="50"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/KotilnNativeConfigureBinariesSideEffect.kt"
+            line="55"
+            column="30"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/KotilnNativeConfigureBinariesSideEffect.kt"
+            line="61"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/sources/android/KotlinAndroidSourceSets.kt"
+            line="40"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/tasks/artifact/KotlinArtifactsExtension.kt"
+            line="26"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method get">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/KotlinBaseApiPlugin.kt"
+            line="179"
+            column="58"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/KotlinCocoapodsPlugin.kt"
+            line="155"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/KotlinCocoapodsPlugin.kt"
+            line="289"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/KotlinCocoapodsPlugin.kt"
+            line="308"
+            column="53"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/KotlinCocoapodsPlugin.kt"
+            line="539"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/KotlinCocoapodsPlugin.kt"
+            line="548"
+            column="53"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/KotlinCocoapodsPlugin.kt"
+            line="594"
+            column="53"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/KotlinCocoapodsPlugin.kt"
+            line="595"
+            column="98"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/KotlinCocoapodsPlugin.kt"
+            line="607"
+            column="64"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/KotlinCocoapodsPlugin.kt"
+            line="608"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/KotlinCocoapodsPlugin.kt"
+            line="619"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/KotlinCocoapodsPlugin.kt"
+            line="659"
+            column="64"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/KotlinCocoapodsPlugin.kt"
+            line="718"
+            column="60"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/KotlinCocoapodsPlugin.kt"
+            line="762"
+            column="37"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/KotlinCocoapodsPlugin.kt"
+            line="776"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/KotlinCocoapodsPlugin.kt"
+            line="778"
+            column="60"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method get">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/KotlinCocoapodsPlugin.kt"
+            line="790"
+            column="77"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method get">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/compilationImpl/KotlinCompilationImpl.kt"
+            line="159"
+            column="43"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of whenObjectAdded">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/compilationImpl/factory/KotlinCompilationImplFactory.kt"
+            line="117"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/compilationImpl/KotlinCompilationSideEffect.kt"
+            line="33"
+            column="76"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method matching">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/compilationImpl/KotlinCompilationSourceSetInclusion.kt"
+            line="121"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method get">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/tasks/configuration/KotlinCompileConfig.kt"
+            line="48"
+            column="113"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/KotlinDependenciesManagement.kt"
+            line="96"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/hierarchy/KotlinHierarchyDslImpl.kt"
+            line="43"
+            column="89"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/hierarchy/KotlinHierarchyDslImpl.kt"
+            line="44"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinJsBinaryContainer.kt"
+            line="53"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinJsBinaryContainer.kt"
+            line="81"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinJsIrSubTarget.kt"
+            line="59"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinJsIrSubTarget.kt"
+            line="96"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinJsIrSubTarget.kt"
+            line="102"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinJsIrSubTarget.kt"
+            line="156"
+            column="62"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinJsIrSubTarget.kt"
+            line="174"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinJsIrTarget.kt"
+            line="154"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinJsIrTarget.kt"
+            line="160"
+            column="45"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinJsIrTarget.kt"
+            line="180"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinJsIrTarget.kt"
+            line="183"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinJsIrTarget.kt"
+            line="322"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinJsIrTarget.kt"
+            line="325"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinJsIrTarget.kt"
+            line="347"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinJsIrTarget.kt"
+            line="350"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinJsIrTargetConfigurator.kt"
+            line="28"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinJsIrTargetConfigurator.kt"
+            line="32"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/KotlinJsPlatformTestRun.kt"
+            line="72"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/KotlinJsPlatformTestRun.kt"
+            line="82"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/testing/KotlinJsTest.kt"
+            line="61"
+            column="38"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of whenObjectAdded">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/KotlinJsTestRunFactory.kt"
+            line="22"
+            column="54"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/jvm/KotlinJvmTarget.kt"
+            line="183"
+            column="24"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/jvm/KotlinJvmTarget.kt"
+            line="210"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/jvm/KotlinJvmTarget.kt"
+            line="223"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/resources/publication/KotlinJvmTargetResourcesPublication.kt"
+            line="20"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/metadata/KotlinMetadataTargetConfigurator.kt"
+            line="71"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/dsl/KotlinMultiplatformExtension.kt"
+            line="237"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method get">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/tasks/KotlinNativeTasks.kt"
+            line="632"
+            column="63"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/npm/resolver/KotlinProjectNpmResolver.kt"
+            line="69"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use named instead of getByName">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/KotlinSourceSetProcessor.kt"
+            line="114"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method get">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/testing/internal/KotlinTestReport.kt"
+            line="90"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method get">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/testing/internal/KotlinTestReport.kt"
+            line="100"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method get">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/testing/internal/KotlinTestsRegistry.kt"
+            line="44"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use named instead of getByName">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/jvm/KotlinWithJavaTarget.kt"
+            line="83"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/sources/LanguageSettingsSetupAction.kt"
+            line="43"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use named instead of getByName">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/sources/LanguageSettingsSetupAction.kt"
+            line="47"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/abi/Multiplatform.kt"
+            line="73"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/statistics/MultiplatformPlatformReportSetupAction.kt"
+            line="12"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method get">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/NativeBinaries.kt"
+            line="85"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method get">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/NativeBinaries.kt"
+            line="102"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method get">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/NativeBinaries.kt"
+            line="199"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/NodeJsEnvironmentConfigurator.kt"
+            line="54"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use named instead of getByName">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/npm/NpmProject.kt"
+            line="82"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/publishing/Publishing.kt"
+            line="99"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Passing Configuration to ConfigurableFileCollection.from results in eager resolution of this configuration. Instead use project.files(configuration) or configuration.incoming.artifactView {}.files to wrap the configuration making it lazy.">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/scripting/internal/ScriptingGradleSubplugin.kt"
+            line="99"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/SetupEmbedAndSignAppleFrameworkTaskSideEffect.kt"
+            line="17"
+            column="53"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/internal/SetupKotlinNativePlatformDependenciesAndStdlib.kt"
+            line="35"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/internal/SetupKotlinNativePlatformDependenciesAndStdlib.kt"
+            line="36"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/SubpluginEnvironment.kt"
+            line="69"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Passing Configuration to ConfigurableFileCollection.from results in eager resolution of this configuration. Instead use project.files(configuration) or configuration.incoming.artifactView {}.files to wrap the configuration making it lazy.">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/apple/swiftexport/SwiftExport.kt"
+            line="147"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/uklibs/consumption/UklibConsumptionSetupAction.kt"
+            line="117"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/uklibs/diagnostics/UklibPublicationDiagnosticsSetupAction.kt"
+            line="50"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/uklibs/diagnostics/UklibPublicationDiagnosticsSetupAction.kt"
+            line="52"
+            column="90"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method get">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/WebpackConfigurator.kt"
+            line="107"
+            column="66"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Avoid using method get">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/WebpackConfigurator.kt"
+            line="210"
+            column="66"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/WebpackConfigurator.kt"
+            line="281"
+            column="30"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/applyUserDefinedAttributes.kt"
+            line="34"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/utils/forEachAndroidVariant.kt"
+            line="16"
+            column="65"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/utils/forEachAndroidVariant.kt"
+            line="18"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/utils/forEachAndroidVariant.kt"
+            line="21"
+            column="66"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/utils/forEachAndroidVariant.kt"
+            line="24"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/utils/forEachAndroidVariant.kt"
+            line="25"
+            column="43"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/utils/kotlinExtensionUtils.kt"
+            line="26"
+            column="52"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/stdlibDependencyManagement.kt"
+            line="57"
+            column="73"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/internal/uitls.kt"
+            line="16"
+            column="56"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/internal/uitls.kt"
+            line="17"
+            column="81"/>
+    </issue>
+
+    <issue
+        id="EagerGradleConfiguration"
+        message="Use configureEach instead of all">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/internal/uitls.kt"
+            line="26"
+            column="61"/>
+    </issue>
+
+    <issue
+        id="FilePropertyDetector"
+        message="`Property&lt;File>` is discouraged. Use `RegularFileProperty` or `DirectoryProperty`.">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/tasks/AbstractPodInstallTask.kt"
+            line="32"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="FilePropertyDetector"
+        message="`Property&lt;File>` is discouraged. Use `RegularFileProperty` or `DirectoryProperty`.">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/resources/AssembleHierarchicalResourcesTask.kt"
+            line="57"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="FilePropertyDetector"
+        message="`Property&lt;File>` is discouraged. Use `RegularFileProperty` or `DirectoryProperty`.">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/apple/CheckSandboxAndWriteProtectionTask.kt"
+            line="22"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="FilePropertyDetector"
+        message="`Property&lt;File>` is discouraged. Use `RegularFileProperty` or `DirectoryProperty`.">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/internal/CommonizerTasks.kt"
+            line="237"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="FilePropertyDetector"
+        message="`Property&lt;File>` is discouraged. Use `RegularFileProperty` or `DirectoryProperty`.">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/apple/CopyDsymDuringArchiving.kt"
+            line="25"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="FilePropertyDetector"
+        message="`Property&lt;File>` is discouraged. Use `RegularFileProperty` or `DirectoryProperty`.">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/apple/CreateBuildSystemDirectory.kt"
+            line="29"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="FilePropertyDetector"
+        message="`Property&lt;File>` is discouraged. Use `RegularFileProperty` or `DirectoryProperty`.">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/DefaultCInteropSettings.kt"
+            line="83"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="FilePropertyDetector"
+        message="`Property&lt;File>` is discouraged. Use `RegularFileProperty` or `DirectoryProperty`.">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/ide/dependencyResolvers/IdeKonanDistributionLibsService.kt"
+            line="34"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="FilePropertyDetector"
+        message="`Property&lt;File>` is discouraged. Use `RegularFileProperty` or `DirectoryProperty`.">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/tasks/Kotlin2JsCompile.kt"
+            line="93"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="FilePropertyDetector"
+        message="`Property&lt;File>` is discouraged. Use `RegularFileProperty` or `DirectoryProperty`.">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/tasks/Kotlin2JsCompile.kt"
+            line="98"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="FilePropertyDetector"
+        message="`Property&lt;File>` is discouraged. Use `RegularFileProperty` or `DirectoryProperty`.">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/KotlinGradleBuildServices.kt"
+            line="26"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="FilePropertyDetector"
+        message="`Property&lt;File>` is discouraged. Use `RegularFileProperty` or `DirectoryProperty`.">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/npm/tasks/KotlinPackageJsonTask.kt"
+            line="78"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="FilePropertyDetector"
+        message="`Property&lt;File>` is discouraged. Use `RegularFileProperty` or `DirectoryProperty`.">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/tasks/PodInstallTask.kt"
+            line="26"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="FilePropertyDetector"
+        message="`Property&lt;File>` is discouraged. Use `RegularFileProperty` or `DirectoryProperty`.">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/tasks/PodSetupBuildTask.kt"
+            line="38"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="FilePropertyDetector"
+        message="`Property&lt;File>` is discouraged. Use `RegularFileProperty` or `DirectoryProperty`.">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/tasks/PodspecTask.kt"
+            line="41"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="FilePropertyDetector"
+        message="`Property&lt;File>` is discouraged. Use `RegularFileProperty` or `DirectoryProperty`.">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/apple/SymbolicLinkToFrameworkTask.kt"
+            line="27"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="FilePropertyDetector"
+        message="`Property&lt;File>` is discouraged. Use `RegularFileProperty` or `DirectoryProperty`.">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/apple/SymbolicLinkToFrameworkTask.kt"
+            line="30"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="FilePropertyDetector"
+        message="`Property&lt;File>` is discouraged. Use `RegularFileProperty` or `DirectoryProperty`.">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/apple/SymbolicLinkToFrameworkTask.kt"
+            line="34"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="GradleLikelyBug"
+        message="Implicit usage of toString on a Provider">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/npm/resolver/KotlinCompilationNpmResolver.kt"
+            line="136"
+            column="71"/>
+    </issue>
+
+    <issue
+        id="GradleLikelyBug"
+        message="Implicit usage of toString on a Provider">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/tasks/KotlinCompile.kt"
+            line="445"
+            column="68"/>
+    </issue>
+
+    <issue
+        id="GradleLikelyBug"
+        message="Implicit usage of toString on a Provider">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/tasks/abi/KotlinLegacyAbiDumpTaskImpl.kt"
+            line="94"
+            column="64"/>
+    </issue>
+
+    <issue
+        id="GradleLikelyBug"
+        message="Use get instead of toString">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/hierarchy/KotlinSourceSetTreeClassifier.kt"
+            line="85"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="GradleLikelyBug"
+        message="Implicit usage of toString on a Provider">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/npm/LockStoreTask.kt"
+            line="34"
+            column="26"/>
+    </issue>
+
+    <issue
+        id="GradleLikelyBug"
+        message="Use get instead of toString">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/targetHierarchy/SourceSetTreeClassifier.kt"
+            line="44"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/web/nodejs/BaseNodeJsRootExtension.kt"
+            line="37"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/npm/BaseNpmExtension.kt"
+            line="37"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/web/yarn/BaseYarnRootExtension.kt"
+            line="36"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/report/BuildMetricsService.kt"
+            line="187"
+            column="55"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/report/BuildMetricsService.kt"
+            line="239"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/internal/CommonizerTasks.kt"
+            line="157"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/internal/CommonizerTasks.kt"
+            line="167"
+            column="52"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/internal/CommonizerTasks.kt"
+            line="184"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/internal/CommonizerTasks.kt"
+            line="185"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/internal/CommonizerTasks.kt"
+            line="187"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/wasm/d8/D8Plugin.kt"
+            line="30"
+            column="32"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/wasm/d8/D8Plugin.kt"
+            line="39"
+            column="56"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/wasm/d8/D8Plugin.kt"
+            line="105"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/wasm/d8/D8Plugin.kt"
+            line="106"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/tasks/GradleCompileTaskProvider.kt"
+            line="46"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/tasks/GradleCompileTaskProvider.kt"
+            line="54"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/GranularMetadataTransformation.kt"
+            line="564"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use providers.gradleProperty instead of findProperty">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/KotlinCocoapodsPlugin.kt"
+            line="230"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use providers.gradleProperty instead of findProperty">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/KotlinCocoapodsPlugin.kt"
+            line="231"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use providers.gradleProperty instead of findProperty">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/KotlinCocoapodsPlugin.kt"
+            line="232"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use providers.gradleProperty instead of findProperty">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/KotlinCocoapodsPlugin.kt"
+            line="235"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use providers.gradleProperty instead of findProperty">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/KotlinCocoapodsPlugin.kt"
+            line="275"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use providers.gradleProperty instead of findProperty">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/KotlinCocoapodsPlugin.kt"
+            line="407"
+            column="43"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/KotlinCocoapodsPlugin.kt"
+            line="790"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Avoid using method getParent">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/KotlinCocoapodsPlugin.kt"
+            line="807"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/npm/resolver/KotlinCompilationNpmResolver.kt"
+            line="110"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/npm/resolver/KotlinCompilationNpmResolver.kt"
+            line="111"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Avoid using method findProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/npm/resolver/KotlinCompilationNpmResolver.kt"
+            line="316"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinJsIrNpmBasedSubTarget.kt"
+            line="19"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinJsIrNpmBasedSubTarget.kt"
+            line="20"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinJsIrTarget.kt"
+            line="201"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinJsIrTarget.kt"
+            line="202"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinJsIrTarget.kt"
+            line="244"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinJsIrTarget.kt"
+            line="264"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinJsIrTarget.kt"
+            line="265"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinJsIrTarget.kt"
+            line="375"
+            column="43"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinJsIrTarget.kt"
+            line="377"
+            column="52"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/testing/karma/KotlinKarma.kt"
+            line="89"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/testing/karma/KotlinKarma.kt"
+            line="90"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/testing/mocha/KotlinMocha.kt"
+            line="61"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/testing/mocha/KotlinMocha.kt"
+            line="62"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/npm/tasks/KotlinNpmInstallTask.kt"
+            line="34"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/KotlinPluginInMultipleProjectsHolder.kt"
+            line="30"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/KotlinPluginInMultipleProjectsHolder.kt"
+            line="69"
+            column="24"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/KotlinProjectStructureMetadataExtractorFactoryDeprecated.kt"
+            line="77"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/KotlinProjectStructureMetadataExtractorFactoryDeprecated.kt"
+            line="88"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/nodejs/NodeJsExec.kt"
+            line="121"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/nodejs/NodeJsExec.kt"
+            line="122"
+            column="54"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/web/nodejs/NodeJsPluginApplier.kt"
+            line="41"
+            column="37"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/nodejs/NodeJsRootPlugin.kt"
+            line="57"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/web/nodejs/NodeJsRootPluginApplier.kt"
+            line="52"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/npm/NpmExtension.kt"
+            line="41"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/npm/NpmProject.kt"
+            line="50"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/npm/NpmProject.kt"
+            line="51"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/npm/NpmResolverPlugin.kt"
+            line="27"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/npm/tasks/RootPackageJsonTask.kt"
+            line="25"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/wasm/nodejs/WasmNodeJsRootPlugin.kt"
+            line="130"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/wasm/npm/WasmNpmExtension.kt"
+            line="43"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/wasm/npm/WasmNpmResolverPlugin.kt"
+            line="24"
+            column="60"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/wasm/yarn/WasmYarnPlugin.kt"
+            line="41"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/wasm/yarn/WasmYarnRootExtension.kt"
+            line="35"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/WebpackConfigurator.kt"
+            line="45"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/ir/WebpackConfigurator.kt"
+            line="46"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/yarn/YarnPlugin.kt"
+            line="40"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/yarn/YarnPluginApplier.kt"
+            line="62"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/yarn/YarnRootExtension.kt"
+            line="52"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/report/configureReporing.kt"
+            line="48"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/utils/extraProperties.kt"
+            line="22"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="GradleProjectIsolation"
+        message="Use isolated.rootProject instead of getRootProject">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/utils/singleAction.kt"
+            line="54"
+            column="88"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/npm/AbstractNodeModulesCache.kt"
+            line="12"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/AbstractSetupTask.kt"
+            line="11"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method hash from org.gradle.internal.hash.FileHasher)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/AbstractSetupTask.kt"
+            line="196"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method toByteArray from org.gradle.internal.hash.HashCode)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/AbstractSetupTask.kt"
+            line="196"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method hash from org.gradle.internal.hash.FileHasher)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/AbstractSetupTask.kt"
+            line="216"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method toByteArray from org.gradle.internal.hash.HashCode)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/AbstractSetupTask.kt"
+            line="216"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/tooling/BuildKotlinToolingMetadataTask.kt"
+            line="12"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method publicType from org.gradle.api.internal.GeneratedSubclass)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/tooling/BuildKotlinToolingMetadataTask.kt"
+            line="138"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs"
+        errorLine1="import org.gradle.api.internal.HasConvention"
+        errorLine2="~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/org/jetbrains/kotlin/gradle/plugin/internal/CompatibilityConventionRegistrarG76.kt"
+            line="10"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method getConvention from org.gradle.api.internal.HasConvention)"
+        errorLine1="        (subject as HasConvention).convention.plugins[name] = plugin"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/org/jetbrains/kotlin/gradle/plugin/internal/CompatibilityConventionRegistrarG76.kt"
+            line="14"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/utils/CurrentBuildIdentifier.kt"
+            line="12"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/utils/CurrentBuildIdentifier.kt"
+            line="13"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method get from org.gradle.internal.service.ServiceRegistry)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/utils/CurrentBuildIdentifier.kt"
+            line="16"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method getBuildIdentifier from org.gradle.internal.build.BuildState)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/utils/CurrentBuildIdentifier.kt"
+            line="16"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method getServices from org.gradle.api.internal.project.ProjectInternal)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/utils/CurrentBuildIdentifier.kt"
+            line="16"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/DefaultCInteropSettings.kt"
+            line="14"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method file from org.gradle.api.internal.file.FileOperations)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/DefaultCInteropSettings.kt"
+            line="128"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/tasks/DefaultKotlinJavaToolchain.kt"
+            line="21"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method current from org.gradle.internal.jvm.Jvm)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/tasks/DefaultKotlinJavaToolchain.kt"
+            line="45"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method getJavaVersion from org.gradle.internal.jvm.Jvm)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/tasks/DefaultKotlinJavaToolchain.kt"
+            line="64"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method getJavaVersion from org.gradle.internal.jvm.Jvm)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/tasks/DefaultKotlinJavaToolchain.kt"
+            line="120"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method discovered from org.gradle.internal.jvm.Jvm)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/tasks/DefaultKotlinJavaToolchain.kt"
+            line="161"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method discovered from org.gradle.internal.jvm.Jvm)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/tasks/DefaultKotlinJavaToolchain.kt"
+            line="168"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method getJavaVersion from org.gradle.internal.jvm.Jvm)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/tasks/DefaultKotlinJavaToolchain.kt"
+            line="215"
+            column="66"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method discovered from org.gradle.internal.jvm.Jvm)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/tasks/DefaultKotlinJavaToolchain.kt"
+            line="278"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method discovered from org.gradle.internal.jvm.Jvm)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/tasks/DefaultKotlinJavaToolchain.kt"
+            line="285"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/external/ExternalKotlinTargetSoftwareComponent.kt"
+            line="11"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/external/ExternalKotlinTargetSoftwareComponent.kt"
+            line="12"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/external/ExternalKotlinTargetSoftwareComponent.kt"
+            line="13"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method get from org.gradle.internal.service.ServiceRegistry)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/external/ExternalKotlinTargetSoftwareComponent.kt"
+            line="26"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method getServices from org.gradle.api.internal.project.ProjectInternal)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/external/ExternalKotlinTargetSoftwareComponent.kt"
+            line="26"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method getUsages from org.gradle.api.internal.component.SoftwareComponentInternal)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/external/ExternalKotlinTargetSoftwareComponent.kt"
+            line="60"
+            column="51"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/ide/dependencyResolvers/IdeBinaryDependencyResolver.kt"
+            line="14"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/ide/dependencyResolvers/IdeBinaryDependencyResolver.kt"
+            line="15"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method getSelector from org.gradle.internal.resolve.ModuleVersionResolveException)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/ide/dependencyResolvers/IdeBinaryDependencyResolver.kt"
+            line="128"
+            column="32"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method getFile from org.gradle.internal.component.local.model.OpaqueComponentArtifactIdentifier)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/ide/dependencyResolvers/IdeBinaryDependencyResolver.kt"
+            line="226"
+            column="57"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/InternalKotlinTargetComponent.kt"
+            line="8"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/testing/JSServiceMessages.kt"
+            line="8"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method getJavaVersion from org.gradle.internal.jvm.Jvm)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/kapt/KaptWithoutKotlincTask.kt"
+            line="175"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/npm/resolver/KotlinCompilationNpmResolver.kt"
+            line="17"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method getIdentityPath from org.gradle.api.internal.artifacts.DefaultProjectComponentIdentifier)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/npm/resolver/KotlinCompilationNpmResolver.kt"
+            line="302"
+            column="62"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method getExecuting from org.gradle.api.internal.tasks.TaskStateInternal)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/tasks/internal/KotlinJsOptionsCompat.kt"
+            line="41"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method getExecuting from org.gradle.api.internal.tasks.TaskStateInternal)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/tasks/internal/KotlinJvmOptionsCompat.kt"
+            line="38"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/jvm/KotlinJvmTargetTestFixturesSideEffect.kt"
+            line="9"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/jvm/tasks/KotlinJvmTest.kt"
+            line="9"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/jvm/tasks/KotlinJvmTest.kt"
+            line="37"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/jvm/tasks/KotlinJvmTest.kt"
+            line="37"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method execute from org.gradle.api.internal.tasks.testing.TestExecuter)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/jvm/tasks/KotlinJvmTest.kt"
+            line="39"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/jvm/tasks/KotlinJvmTest.kt"
+            line="41"
+            column="26"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/jvm/tasks/KotlinJvmTest.kt"
+            line="41"
+            column="26"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/jvm/tasks/KotlinJvmTest.kt"
+            line="43"
+            column="47"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/jvm/tasks/KotlinJvmTest.kt"
+            line="43"
+            column="47"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method getClassDisplayName from org.gradle.api.internal.tasks.testing.TestDescriptorInternal)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/jvm/tasks/KotlinJvmTest.kt"
+            line="46"
+            column="75"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method started from org.gradle.api.internal.tasks.testing.TestResultProcessor)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/jvm/tasks/KotlinJvmTest.kt"
+            line="48"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/testing/karma/KotlinKarma.kt"
+            line="13"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/testing/karma/KotlinKarma.kt"
+            line="17"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/testing/karma/KotlinKarma.kt"
+            line="18"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method progress from org.gradle.internal.logging.progress.ProgressLogger)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/testing/karma/KotlinKarma.kt"
+            line="553"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method getExecuting from org.gradle.api.internal.tasks.TaskStateInternal)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/tasks/internal/KotlinMultiplatformCommonOptionsCompat.kt"
+            line="35"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/npm/tasks/KotlinNpmCachesSetup.kt"
+            line="10"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/npm/KotlinNpmResolutionManager.kt"
+            line="18"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/KotlinSoftwareComponent.kt"
+            line="18"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/KotlinSoftwareComponent.kt"
+            line="19"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method getUsages from org.gradle.api.internal.component.SoftwareComponentInternal)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/KotlinSoftwareComponent.kt"
+            line="129"
+            column="59"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/KotlinTargetSoftwareComponent.kt"
+            line="10"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/KotlinTargetSoftwareComponentImpl.kt"
+            line="13"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/KotlinTargetSoftwareComponentImpl.kt"
+            line="14"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/KotlinTargetSoftwareComponentImpl.kt"
+            line="15"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method get from org.gradle.internal.service.ServiceRegistry)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/KotlinTargetSoftwareComponentImpl.kt"
+            line="27"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method getServices from org.gradle.api.internal.project.ProjectInternal)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/KotlinTargetSoftwareComponentImpl.kt"
+            line="27"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method getUsages from org.gradle.api.internal.component.SoftwareComponentInternal)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/KotlinTargetSoftwareComponentImpl.kt"
+            line="91"
+            column="62"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/tasks/KotlinTest.kt"
+            line="8"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/tasks/KotlinTest.kt"
+            line="9"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method getCommandLineIncludePatterns from org.gradle.api.internal.tasks.testing.filter.DefaultTestFilter)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/tasks/KotlinTest.kt"
+            line="60"
+            column="52"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/testing/KotlinTestFailure.kt"
+            line="8"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/webpack/KotlinWebpack.kt"
+            line="17"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/webpack/KotlinWebpack.kt"
+            line="18"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/webpack/KotlinWebpack.kt"
+            line="19"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method get from org.gradle.internal.service.ServiceRegistry)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/webpack/KotlinWebpack.kt"
+            line="336"
+            column="38"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method get from org.gradle.deployment.internal.DeploymentRegistry)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/webpack/KotlinWebpack.kt"
+            line="337"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/webpack/KotlinWebpack.kt"
+            line="339"
+            column="53"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (field BLOCK from org.gradle.deployment.internal.DeploymentRegistry.ChangeBehavior)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/webpack/KotlinWebpack.kt"
+            line="339"
+            column="53"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method start from org.gradle.deployment.internal.DeploymentRegistry)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/webpack/KotlinWebpack.kt"
+            line="339"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/webpack/KotlinWebpackRunner.kt"
+            line="10"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/internal/MavenPublicationComponentAccessor.kt"
+            line="12"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method getComponent from org.gradle.api.internal.artifacts.ivyservice.projectmodule.ProjectComponentPublication)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/internal/MavenPublicationComponentAccessor.kt"
+            line="38"
+            column="45"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs"
+        errorLine1="import org.gradle.api.publish.maven.internal.publication.MavenPublicationInternal"
+        errorLine2="~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/org/jetbrains/kotlin/gradle/plugin/internal/MavenPublicationComponentAccessorG76.kt"
+            line="11"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method getComponent from org.gradle.api.internal.artifacts.ivyservice.projectmodule.ProjectComponentPublication)"
+        errorLine1="        return publication.component"
+        errorLine2="               ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/org/jetbrains/kotlin/gradle/plugin/internal/MavenPublicationComponentAccessorG76.kt"
+            line="16"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/internal/NativeAppleSimulatorTCServiceMessagesClient.kt"
+            line="8"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/npm/Npm.kt"
+            line="11"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/npm/NpmApiExecution.kt"
+            line="11"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/npm/NpmDependency.kt"
+            line="12"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/ProcessedFilesCache.kt"
+            line="12"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method hash from org.gradle.internal.hash.FileHasher)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/ProcessedFilesCache.kt"
+            line="189"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method toByteArray from org.gradle.internal.hash.HashCode)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/ProcessedFilesCache.kt"
+            line="189"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs"
+        errorLine1="import org.gradle.api.internal.StartParameterInternal"
+        errorLine2="~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/org/jetbrains/kotlin/gradle/plugin/internal/ProjectIsolationStartParameterAccessorG76.kt"
+            line="9"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method get from org.gradle.internal.buildoption.BuildOption.Value)"
+        errorLine1="        (gradle.startParameter as StartParameterInternal).isolatedProjects.get()"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/org/jetbrains/kotlin/gradle/plugin/internal/ProjectIsolationStartParameterAccessorG76.kt"
+            line="16"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method getIsolatedProjects from org.gradle.api.internal.StartParameterInternal)"
+        errorLine1="        (gradle.startParameter as StartParameterInternal).isolatedProjects.get()"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/org/jetbrains/kotlin/gradle/plugin/internal/ProjectIsolationStartParameterAccessorG76.kt"
+            line="16"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/publishing/Publishing.kt"
+            line="14"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method publishWithOriginalFileName from org.gradle.api.publish.maven.internal.publication.MavenPublicationInternal)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/publishing/Publishing.kt"
+            line="56"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method publishWithOriginalFileName from org.gradle.api.publish.maven.internal.publication.MavenPublicationInternal)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/publishing/Publishing.kt"
+            line="117"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method failure from org.gradle.api.internal.tasks.testing.TestResultProcessor)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/testing/TCServiceMessagesClient.kt"
+            line="180"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method getId from org.gradle.api.internal.tasks.testing.TestDescriptorInternal)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/testing/TCServiceMessagesClient.kt"
+            line="181"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method output from org.gradle.api.internal.tasks.testing.TestResultProcessor)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/testing/TCServiceMessagesClient.kt"
+            line="216"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method getId from org.gradle.api.internal.tasks.testing.TestDescriptorInternal)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/testing/TCServiceMessagesClient.kt"
+            line="217"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method getId from org.gradle.api.internal.tasks.testing.TestDescriptorInternal)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/testing/TCServiceMessagesClient.kt"
+            line="364"
+            column="62"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method started from org.gradle.api.internal.tasks.testing.TestResultProcessor)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/testing/TCServiceMessagesClient.kt"
+            line="364"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method completed from org.gradle.api.internal.tasks.testing.TestResultProcessor)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/testing/TCServiceMessagesClient.kt"
+            line="373"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method getId from org.gradle.api.internal.tasks.testing.TestDescriptorInternal)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/testing/TCServiceMessagesClient.kt"
+            line="373"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/testing/TCServiceMessagesClient.kt"
+            line="392"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/testing/TCServiceMessagesClient.kt"
+            line="437"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/testing/TCServiceMessagesClient.kt"
+            line="482"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/testing/TCServiceMessagesTestExecutor.kt"
+            line="8"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/testing/TCServiceMessagesTestExecutor.kt"
+            line="9"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/testing/TCServiceMessagesTestExecutor.kt"
+            line="10"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/TeamCityMessageCommonClient.kt"
+            line="12"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method progress from org.gradle.internal.logging.progress.ProgressLogger)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/TeamCityMessageCommonClient.kt"
+            line="57"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/yarn/YarnBasics.kt"
+            line="11"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/yarn/YarnWorkspaces.kt"
+            line="10"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/exec.kt"
+            line="8"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method progress from org.gradle.internal.logging.progress.ProgressLogger)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/exec.kt"
+            line="23"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method progress from org.gradle.internal.logging.progress.ProgressLogger)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/exec.kt"
+            line="95"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method progress from org.gradle.internal.logging.progress.ProgressLogger)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/exec.kt"
+            line="116"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/utils/failures.kt"
+            line="9"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method get from org.gradle.internal.service.ServiceRegistry)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/utils/failures.kt"
+            line="64"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method getServices from org.gradle.api.internal.project.ProjectInternal)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/utils/failures.kt"
+            line="64"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/hostUnameOutput.kt"
+            line="10"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method current from org.gradle.internal.os.OperatingSystem)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/hostUnameOutput.kt"
+            line="15"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method isWindows from org.gradle.internal.os.OperatingSystem)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/hostUnameOutput.kt"
+            line="15"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/plugin/mpp/kotlinCompilations.kt"
+            line="10"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/progress.kt"
+            line="9"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/progress.kt"
+            line="10"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/progress.kt"
+            line="11"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method newOperation from org.gradle.internal.logging.progress.ProgressLoggerFactory)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/internal/progress.kt"
+            line="22"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/internal/utils.kt"
+            line="8"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/utils.kt"
+            line="8"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/internal/utils.kt"
+            line="9"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method newHasher from org.gradle.internal.hash.HashFunction)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/internal/utils.kt"
+            line="45"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method putString from org.gradle.internal.hash.Hasher)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/internal/utils.kt"
+            line="48"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method putHash from org.gradle.internal.hash.Hasher)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/internal/utils.kt"
+            line="51"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method putHash from org.gradle.internal.hash.Hasher)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/internal/utils.kt"
+            line="54"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method putString from org.gradle.internal.hash.Hasher)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/internal/utils.kt"
+            line="55"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method hash from org.gradle.internal.hash.Hasher)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/internal/utils.kt"
+            line="60"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="InternalGradleApiUsage"
+        message="Avoid using internal Gradle APIs (method toByteArray from org.gradle.internal.hash.HashCode)">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/js/internal/utils.kt"
+            line="60"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="WithTypeWithoutConfigureEach"
+        message="Avoid passing a closure to withType, use withType().configureEach instead">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/CocoapodsExtension.kt"
+            line="222"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="WithTypeWithoutConfigureEach"
+        message="Avoid passing a closure to withType, use withType().configureEach instead">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/KotlinCocoapodsPlugin.kt"
+            line="458"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="WithTypeWithoutConfigureEach"
+        message="Avoid passing a closure to withType, use withType().configureEach instead">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/KotlinCocoapodsPlugin.kt"
+            line="463"
+            column="38"/>
+    </issue>
+
+    <issue
+        id="WithTypeWithoutConfigureEach"
+        message="Avoid passing a closure to withType, use withType().configureEach instead">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/KotlinCocoapodsPlugin.kt"
+            line="661"
+            column="26"/>
+    </issue>
+
+    <issue
+        id="WithTypeWithoutConfigureEach"
+        message="Avoid passing a closure to withType, use withType().configureEach instead">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/native/cocoapods/KotlinCocoapodsPlugin.kt"
+            line="720"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="WithTypeWithoutConfigureEach"
+        message="Avoid passing a closure to withType, use withType().configureEach instead">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/targets/jvm/KotlinJvmTarget.kt"
+            line="215"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="WithTypeWithoutConfigureEach"
+        message="Avoid passing a closure to withType, use withType().configureEach instead">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/scripting/internal/ScriptingGradleSubplugin.kt"
+            line="62"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="WithTypeWithoutConfigureEach"
+        message="Avoid passing a closure to withType, use withType().configureEach instead">
+        <location
+            file="${:kotlin-gradle-plugin*main*MAIN*sourceProvider*0*javaDir*2}/org/jetbrains/kotlin/gradle/scripting/internal/ScriptingGradleSubplugin.kt"
+            line="66"
+            column="29"/>
+    </issue>
+
+</issues>
